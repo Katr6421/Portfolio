@@ -1,0 +1,407 @@
+/* basis indstillinger */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9rem;
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* indstillinger for nav */
+
+nav {
+    position: absolute;
+    width: 100%;
+
+}
+
+a {
+    color: #593825;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9rem;
+
+    margin: 0;
+    font-weight: 200;
+}
+
+#tilbageknap {
+    color: #593825;
+    font-size: 2.5rem;
+    margin-left: 14px;
+}
+
+/* classes der bliver tilføjet og fjernet */
+.hide {
+    display: none;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+
+/* nav */
+#menu {
+    list-style-type: none;
+    transition: transform.3s;
+    transform-origin: top left;
+
+    padding-left: 0px;
+    margin-left: 14px;
+
+    position: absolute;
+
+}
+
+#menuknap {
+    font-size: 3rem;
+    color: #593825;
+    cursor: pointer;
+    margin-right: 14px;
+    text-align: right;
+}
+
+#lukkeknap {
+    font-size: 3rem;
+    color: #593825;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-right: 14px;
+    text-align: right;
+}
+
+#menuwrapper {
+    display: flex;
+
+}
+
+.menudown {
+    top: 40vw;
+}
+
+.menufit {
+    top: 12vw;
+}
+
+/*media nav mobil */
+@media only screen and (min-width: 500px) {
+    #menu {
+        width: 472px;
+        margin-right: 14px;
+        background-color: #22aaaa;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+/* media nav web */
+@media only screen and (min-width: 600px) {
+    #menu {
+        opacity: 1;
+        list-style-type: none;
+        transition: transform.3s;
+        transform-origin: top left;
+        display: flex;
+        justify-content: flex-start;
+        position: sticky;
+        width: 100%;
+        /* gør background color gennemsigtig */
+        background-color: transparent;
+    }
+
+    #menuknap {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    a {
+        margin-right: 25px;
+        margin-left: 25px;
+
+    }
+
+    #li_mid {
+        border-left: 2px solid;
+        border-right: 2px solid;
+        color: #808384;
+
+    }
+
+
+
+}
+
+/*startside */
+
+#startbody .sectionswrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+#startbody .sectionswrapper .splashimage {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+#startbody .splashimageWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-grow: 1;
+    flex-basis: 600px;
+
+}
+
+
+
+@media only screen and (min-width: 500px) {
+    #startbody img {
+        object-fit: cover;
+        object-position: right;
+
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+    #startbody img {
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+}
+
+/* menu */
+
+#menubody #links_til_opgaver {
+    margin: 0;
+}
+
+#menubody #opgaver {
+    max-width: 1280px;
+}
+
+#menubody .sectionswrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+
+}
+
+#menubody .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 1280px;
+    flex-grow: 1;
+}
+
+#menubody .contentboks {
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 350px;
+}
+
+
+#menubody img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/*medi mobil */
+@media only screen and (min-width: 500px) {
+    #menubody nav {
+        position: relative;
+    }
+
+    #menubody .contentboks {
+        margin: 15px;
+    }
+
+}
+
+
+/* media web */
+@media only screen and (min-width: 600px) {
+    #menubody .sectionswrapper {
+        margin-top: 30px;
+    }
+
+    #menubody #menuwrapper {
+        position: absolute;
+    }
+
+    #menubody .contentboks {}
+
+
+}
+
+@media only screen and (min-width: 1079px) {}
+
+/*portfolio */
+
+#portfoliobody header {
+    background-color: #ededed;
+
+}
+
+#portfoliobody .sectionswrapper {
+    background-color: #ededed;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#portfoliobody .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfoliobody .text_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+#portfoliobody .text_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 120px;
+    width: 100%;
+
+}
+
+/* grundlæggende html */
+#portfoliobody .siteknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #E0CCB7;
+    margin-bottom: 15px;
+}
+
+
+
+#portfoliobody .dokumentationknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #FFF3E7;
+    margin-bottom: 15px;
+}
+
+
+
+#portfoliobody .image {
+    flex-grow: 1;
+    flex-basis: 400px
+}
+
+
+
+
+
+/*medi mobil */
+@media only screen and (min-width: 500px) {
+    #portfoliobody nav {
+        position: relative;
+    }
+
+    #portfoliobody .container {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+/*medi web */
+@media only screen and (min-width: 600px) {
+    #portfoliobody #menuwrapper {
+        position: absolute;
+    }
+
+    #portfoliobody nav {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* grundelæggende ux */
+
+#grundloeggende_ux2 .sectionswrapper {
+    background-color: #ADADAD;
+    padding-top: 30px;
+}
+
+#portfoliobody .pfdknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #E7D1DC;
+    margin-bottom: 15px;
+}
