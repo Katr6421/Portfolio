@@ -42,6 +42,18 @@ p {
     line-height: 1.5rem;
 }
 
+/*
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+
+section {
+    scroll-snap-align: start;
+*/
+
 /* indstillinger for nav */
 
 nav {
@@ -360,6 +372,10 @@ a {
     flex-basis: 400px
 }
 
+#portfoliobody .knapteskt {
+    color: white;
+}
+
 
 
 
@@ -402,6 +418,91 @@ a {
     text-align: center;
     margin: auto;
     padding: 0.6rem;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .pfd_data_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
     background-color: #E7D1DC;
     margin-bottom: 15px;
+}
+
+/* grundlæggende ux design sprint */
+
+#grundloeggende_ux3 .sectionswrapper {
+    background-color: #D4D4D4;
+    padding-top: 30px;
+}
+
+#portfoliobody .pfd_designsprint_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #E85149;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .dokumentation_designsprint_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #233248;
+    margin-bottom: 15px;
+}
+
+/* grundlæggende animation assetliste og design dokumentation */
+
+#portfoliobody .link_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #BCFD5B;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .pfd_animation_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #24DD28;
+    margin-bottom: 15px
+}
+
+#portfoliobody .image_container {
+    display: flex;
+    justify-content: space-around;
+
+    /* gør så de ligger på en lige linje */
+    align-items: baseline;
+}
+
+/* grundlæggende animation - animationsopgave */
+
+#portfoliobody .pfd_animationsopgave_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #24DD28;
+    margin-bottom: 15px
 }
